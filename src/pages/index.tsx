@@ -31,13 +31,13 @@ export default function Home() {
         <div className="flex justify-end">
           <Botao cor="green" className="mb-4">Novo Cliente</Botao>
         </div>
-        {/* <Tabela clientes={clientes} 
+        <Tabela clientes={clientes} 
           clienteSelecionado={clienteSelecionado}
           clienteExcluido={clienteExcluido} 
         />
-        */}
-      </Layout> 
-      <Formulario />
+       
+        <Formulario cliente={clientes[2]}></Formulario>
+      </Layout>  
     </div>
   )
 }
